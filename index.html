@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMW M5</title>
+  <link rel="icon" type="image/x-icon" href="BMW.svg.png">
+  <style>
+    /* VIDEO BACKGROUND - COVERS ENTIRE PAGE */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white; /* Changed to white for better visibility */
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Video container covering entire page */
+    .video-background {
+      position: fixed; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2; 
+    }
+
+    .video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+
+   
+    /* CONTENT STYLES */
+    .content {
+      position: relative;
+      z-index: 1; 
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header {
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .layout {
+      display: flex;
+      gap: 30px;
+      width: 90%;
+      max-width: 1200px;
+      margin-bottom: 40px;
+    }
+
+    .text {
+      flex: 1;
+      text-align: left;
+      padding-right: 20px;
+    }
+
+    .image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-top: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #0066b3; /* BMW blue */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 20px 0;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #000000; 
+      transform: translateY(-2px);
+    }
+
+    /* Table styles */
+    .specs-table {
+      width: 90%;
+      max-width: 1200px;
+      border-collapse: collapse;
+      margin: 30px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+      color: black;
+    }
+
+    .specs-table th, .specs-table td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .specs-table th {
+      background-color: #0066b3; /* BMW blue */
+      color: white;
+      font-weight: bold;
+    }
+
+    .specs-table tbody tr:hover {
+      background-color: rgba(230, 242, 255, 0.7);
+    }
+
+    .specs-table tfoot td {
+      background-color: rgba(51, 51, 51, 0.9);
+      color: white;
+      font-style: italic;
+      padding: 15px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      border-top: 2px solid #0066b3;
+      width: 90%;
+      max-width: 1200px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #0066b3;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    h3 {
+      color: #0066b3;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="13127448_1920_1080_60fps.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+ 
+  
+  <!-- Main Content -->
+  <div class="content">
+    <center>
+    <div class="header">
+      <img src="BMW.svg.png" width="50" alt="BMW Logo">
+      <span>BMW M5</span>
+    </div>
+</center>
+    <div class="layout">
+      <div class="text">
+        <h2>BMW M5 Performance</h2>
+        <p>
+          The BMW M5 is a high-performance variant of the 5 Series executive car built by BMW's motorsport division, BMW M.
+        </p>
+
+        <h3>Key Characteristics</h3>
+        <p><strong><span style="color: #0066b3;">Brand:</strong></span> BMW M Division</p>
+        <p><strong><span style="color: #0066b3;">Segment:</strong></span> Executive sports sedan</p>
+        <p><strong><span style="color: #0066b3;">Target buyer:</strong></span> Performance enthusiasts seeking luxury and power</p>
+
+        <h3>Engine & Performance</h3>
+        <ul>
+          <li>4.4L BMW M TwinPower Turbo V8 engine</li>
+          <li>600–617 hp (depending on model year)</li>
+          <li>8-speed M Steptronic transmission</li>
+          <li>M xDrive all-wheel drive system</li>
+        </ul>    
+      </div>
+      <div class="image">
+        <img src="2020-bmw-m5-edition-35-years.jpg" alt="BMW M5">
+      </div>
+    </div>
+
+      <a href="https://configure.bmw.in/en_IN/configure/G90/82FK/FLKKG,P0300,S01DF,S01GA,S0223,S02NK,S02T4,S02TB,S02VB,S02VC,S0316,S0322,S032X,S03DP,S03MF,S0402,S0423,S0428,S043R,S0453,S0459,S0488,S0494,S04FL,S04GQ,S04MA,S04NB,S04NR,S04U8,S04U9,S04UR,S04V1,S0548,S0552,S05AS,S05DN,S06AE,S06AF,S06AK,S06C3,S06CP,S06F4,S06NX,S06PA,S06U3,S0760,S0776,S07M9,S07ME,S0825,S0850,S0853,S0880,S08KM,S08R3,S08R9,S08TF,S08WN,S0925,S0993,S0ZJJ"Target=blank; class="btn">Configure Your BMW M5</a>
+
+   
+    <table class="specs-table">
+    <thead>
+    <tr>
+      <th>Model</th>
+      <th>Engine</th>
+      <th>Power (hp)</th>
+      <th>Torque (Nm)</th>
+      <th>0-60 mph</th>
+      <th>Drive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BMW M5</td>
+      <td>4.4L V8 TwinPower Turbo</td>
+      <td>600</td>
+      <td>750</td>
+      <td>3.2s</td>
+      <td>M xDrive AWD</td>
+    </tr>
+    <tr>
+      <td>BMW M5 Competition</td>
+      <td>4.4L V8 TwinPower Turbo</td>
+      <td>617</td>
+      <td>750</td>
+      <td>3.1s</td>
+      <td>M xDrive AWD</td>
+    </tr>
+    <tr>
+      <td>BMW M5 CS</td>
+      <td>4.4L V8 TwinPower Turbo</td>
+      <td>627</td>
+      <td>750</td>
+      <td>2.9s</td>
+      <td>M xDrive AWD</td>
+    </tr>
+  </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">All models feature launch control and M-specific tuning</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!--The sound-->
+      <audio id="carSound">
+  <source src="bmw_m5_start.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('carSound').play()"
+  style =" background: #0066b3; color: #ffffff; border-radius: 10px;
+          font-size: 40px;font-weight: bold; cursor: pointer;border-color: #0066b3;display: inline-block;
+      ">
+😈
+</button>
+    <footer>
+      <span>© BMW Group 2025. The BMW name, model names and logo are registered trademarks.</span>
+    </footer>
+  </div>
+
+</body>
+</html>
